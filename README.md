@@ -10,14 +10,17 @@ This project aims to help small grocery shop owners:
 - Reduce manual record-keeping
 
 
+## How i will start this web for now?
+```bash
+uv run main.py
+```
+
+Later i will add the docker containers here to make it easy.
+
 ### Installation
 
 How i started this repo?
 
 ```bash
 uv init . --python 3.14.1
-```
-HOw i will start this web for now?
-```bash
-uv run main.py
 ```
