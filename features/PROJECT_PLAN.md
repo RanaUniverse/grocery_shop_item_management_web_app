@@ -13,6 +13,9 @@ This i need to impliment `customers` will shows somethings and `staff` will acce
 
 ## 📦 Core Features
 
+- [ ] Keep my python code with blueprints
+- [ ] make nav and footer in parts and add things
+- [ ] add bootstrap 
 - [ ] Add Product with full details
 - [ ] View Product List
 - [ ] Edit Product
