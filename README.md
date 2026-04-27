@@ -10,6 +10,10 @@ This project aims to help small grocery shop owners:
 - Reduce manual record-keeping
 
 
+## What what has been made
+[Visit this page to see what has made](/features/PROJECT_PLAN.md)
+
+
 ## How i will start this web for now?
 ```bash
 uv run main.py
@@ -24,3 +28,4 @@ How i started this repo?
 ```bash
 uv init . --python 3.14.1
 ```
+

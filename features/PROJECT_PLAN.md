@@ -27,6 +27,10 @@ This i need to impliment `customers` will shows somethings and `staff` will acce
 - [ ] Delete Product
 ---
 
+
+## 📌 Endpoints Checklist
+Check the enpoints like url/about and so on in this [below page.](/features/ENDPOINTS.md)
+
 ## 🧠 Future Features
 
 The things which will come later will be shows [here](/features/IDEAS.md) and i will mark after complete there also.
