@@ -11,12 +11,15 @@ sys.dont_write_bytecode = True
 
 from flask import Flask
 
+
+from blueprint.error.routes import error_bp
+from blueprint.general.routes import general_bp
+
+
 app = Flask(__name__)
 
-
-@app.get("/")
-def index_page():
-    return "<h1>Rana Universe</h1>"
+app.register_blueprint(blueprint=general_bp)
+app.register_blueprint(blueprint=error_bp)
 
 
 if __name__ == "__main__":
