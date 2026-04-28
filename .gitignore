@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# for testing of the sqlite database the database file name i will keep in the ignore
+zzz_database.db
+
+# for some testing python file i will make here
+z*.py
