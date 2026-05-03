@@ -28,4 +28,7 @@ How i started this repo?
 ```bash
 uv init . --python 3.14.1
 ```
-
+Below is the way to install the library in good standard way.
+```
+uv add package_name==version
+```
