@@ -2,7 +2,7 @@
 The database idea will be written here. -->
 
 # Database Design
-It will be `products` & `category`.
+It will be `products` & `category` & `user`.
 
 ## How to use SQLITE DATABASE?
 For sqlite i dont need to do anything special, in the create_engine() function i need to give teh path of the database name only.
@@ -35,6 +35,26 @@ CREATE DATABASE
 postgres=# 
 ```
 
+## Using Alembic
+I will use alembic so that in future i can easily upgrade to new tables, columns and so on.
+
+```
+alembic init alembic
+```
+After running this upper i need to change some configuration to allow alembic make table's in my database.
+
+```
+alembic revision --autogenerate -m "initial migration first time"
+```
+Thsi will generate the some files in the alembic/versions/*py file.
+```
+alembic upgrade head
+```
+This will do changes the structer of the database and from then i will able to add new data in the database.
+
+then i will change the model in my code and do follow the upper things again.
+
+
 
 
 # 🗄️ Database Design
@@ -63,3 +83,13 @@ postgres=#
 ## 🔗 Relationships
 
 - One category → many products
+
+
+## User Table
+This is for storing user informations here for now i will make one table
+
+- id_ 
+- first_name
+- last_name
+- phone_no
+- email_id
