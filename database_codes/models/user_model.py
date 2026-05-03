@@ -1,5 +1,5 @@
 """
-db_codes/models/user_model.py
+database_codes/models/user_model.py
 Here i will write to make user table
 i will store the user's information
 """

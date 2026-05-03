@@ -1,5 +1,5 @@
 """
-db_codes/db_make.py
+database_codes/db_make.py
 Here i will make the database by calling this function
 from here and then i will use this in the main main.py
 """

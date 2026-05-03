@@ -8,8 +8,8 @@ from sqlalchemy import pool
 from sqlmodel import SQLModel
 
 
-from db_codes.db_make import DATABASE_URL
-from db_codes.models import *
+from database_codes.db_make import DATABASE_URL
+from database_codes.models import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

@@ -1,5 +1,5 @@
 """
-db_codes/models/__init__.py
+database_codes/models/__init__.py
 Here i make it as a package as i will write the models here in this place
 I will write the models ie the tables my database will need in this package
 """

@@ -1,5 +1,5 @@
 """
-db_codes/models/product_model.py
+database_codes/models/product_model.py
 Here i will write the code to make the product table
 """
 

@@ -1,5 +1,5 @@
 """
-db_codes/__init__.py
+database_codes/__init__.py
 This is the package for the sqlmodel database related code
 Here i will setup the database's table's model
 and then also use some functions regarding the database operation

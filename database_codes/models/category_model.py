@@ -1,5 +1,5 @@
 """
-db_codes/models/category_model.py
+database_codes/models/category_model.py
 Here i will store the information about the category of the products
 """
 
