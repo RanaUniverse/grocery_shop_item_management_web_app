@@ -18,6 +18,9 @@ if TYPE_CHECKING:
     from .category_model import CategoryModel
 
 
+from utils.general_utils import generate_hex_uuid4
+
+
 class ProductModel(SQLModel, table=True):
     """
     I make product will depends on the category table,
@@ -27,7 +30,11 @@ class ProductModel(SQLModel, table=True):
 
     __tablename__ = "product_data"  # type: ignore
 
-    id_: int | None = Field(default=None, primary_key=True)
+    # id_: int | None = Field(default=None, primary_key=True)
+    id_: str | None = Field(
+        default_factory=generate_hex_uuid4,
+        primary_key=True,
+    )
 
     name: str = Field(index=True)
     description: str | None
