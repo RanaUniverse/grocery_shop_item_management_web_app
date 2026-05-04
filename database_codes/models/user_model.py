@@ -9,7 +9,7 @@ from sqlmodel import (
     SQLModel,
 )
 
-from utils import generate_hex_uuid4
+from utils.general_utils import generate_hex_uuid4
 
 
 class UserModel(SQLModel, table=True):
