@@ -13,36 +13,7 @@ from ..models import (
     ProductModel,
 )
 
-
-def add_new_product_row_old(
-    database_engine: Engine,
-    name: str,
-    description: str | None,
-    quantity: int,
-    mrp_price: float | None,
-    purchase_price: float | None,
-    sell_price: float | None,
-):
-    """
-    this is my old funciton i need to remove this maybe
-    """
-    with Session(database_engine) as session:
-        product_obj = ProductModel(
-            name=name,
-            description=description,
-            quantity=quantity,
-            mrp_price=mrp_price,
-            purchase_price=purchase_price,
-            sell_price=sell_price,
-        )
-        try:
-            session.add(product_obj)
-            session.commit()
-            session.refresh(product_obj)
-            return product_obj
-        except Exception as e:
-            print(f"Something wrong happens here regarding the product add, {e}")
-            return None
+from utils.custom_logger import logger
 
 
 def add_new_product_row(
@@ -62,5 +33,7 @@ def add_new_product_row(
             return product_obj
 
         except Exception as e:
-            print("Wrong in insert data in product row," f"{e}")
+            logger.warning(
+                f"Somethings wrong when try to insert into the product row, {e}"
+            )
             return None
